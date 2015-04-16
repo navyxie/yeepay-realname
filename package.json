@@ -12,7 +12,8 @@
   "main": "index.js",
   "dependencies": {
     "utf8": "^2.1.0",
-    "request":"^2.55.0"
+    "request":"^2.55.0",
+    "iconv":"^2.1.6"
   },
   "devDependencies": {
     "mocha": "*",
