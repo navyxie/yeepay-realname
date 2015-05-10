@@ -5,9 +5,14 @@ yeepay-易宝支付-实名认证 SDK
 ###  use case
 
 		var YPRealName = require('yeepay-realname');
+		var bankcardinfo = require('bankcardinfo');
+		var name = "**军";
+		var idCardNumber = "****4195";
+		var bankCardNumber = "****7533";
+		var bankCode = bankcardinfo.getBankInfoByCardNo(bankCardNumber);//CCB	
 		var YPRN = new YPRealName({customerId:"10001674472",keyValue:"c2F2N65BJi04SkrJ4072K7k0x371i20zHUYX5HZb5219A6t757cKwu5d3Xo7"});
 		//必须穿四个参数，姓名，身份证号码，银行编码，银行卡号
-		var testData = {name:"**军",idCardNumber:"****4195",bankCode:"CCB",bankCardNumber:"****7533"};
+		var testData = {name:name,idCardNumber:idCardNumber,bankCode:bankCode,bankCardNumber:bankCardNumber};
 		var hmac = YPRN.getReqMd5Hmac(testData);
 		//use case
 		YPRN.authorize(testData,function(err,data){
