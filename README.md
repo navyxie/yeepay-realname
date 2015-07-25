@@ -12,7 +12,7 @@
 
 ```js
 var YPRealName = require('yeepay-realname');
-var YPRN = new YPRealName({customerId:"10001674472",keyValue:"c2F2N65BJi04SkrJ4072K7k0x371i20zHUYX5HZb5219A6t757cKwu5d3Xo7"});
+var YPRN = new YPRealName({customerId:"你的易宝customerId",keyValue:"你的易宝keyValue"});
 //必须传个五参数:商户订单号，姓名，身份证号码，银行编码，银行卡号
 var testData = {busId:"商户订单号",name:"**军",idCardNumber:"****4195",bankCode:"CCB",bankCardNumber:"****7533"};
 //use case
